@@ -1,4 +1,3 @@
-
 pipeline {
     agent any 
     tools {
@@ -10,7 +9,7 @@ pipeline {
                 // 
                   echo 'Etape Build maven'
                     bat 'mvn clean compile'
-                    bat 'mvn clean package'
+                    
             }
         }
         
@@ -25,6 +24,7 @@ pipeline {
             steps {
                 // 
                   echo 'Etape PAckaging'
+                 bat 'mvn clean package'
             }
         }
         
