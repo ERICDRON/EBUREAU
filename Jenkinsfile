@@ -8,28 +8,29 @@ pipeline {
         stage('Build') { 
             steps {
                 // 
-                  echo "Etape Build"
+                  echo 'Etape Build maven'
+                    bat 'mvn clean compile'
             }
         }
         
         stage('Test') { 
             steps {
                 // 
-                echo "Etape Test"
+                echo 'Etape Test'
             }
         }
         
         stage('Packaging') { 
             steps {
                 // 
-                  echo "Etape PAckaging "
+                  echo 'Etape PAckaging'
             }
         }
         
         stage('Deploy') { 
             steps {
                 // 
-                 echo "Etape Deploy "
+                 echo 'Etape Deploy'
             }
         }
     }
