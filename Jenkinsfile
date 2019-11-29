@@ -5,31 +5,29 @@ pipeline {
         stage('Build') { 
             steps {
                 // 
-                echo 'Etape Compile'
+                  echo "Etape Build"
             }
         }
-    }
+        
         stage('Test') { 
             steps {
                 // 
-                echo 'Etape Test'                
+                echo "Etape Test"
             }
-            
         }
+        
         stage('Packaging') { 
             steps {
-                //      
-                echo 'Etape Packaging' 
-                    }
-            
-            
+                // 
+                  echo "Etape PAckaging "
+            }
         }
+        
         stage('Deploy') { 
             steps {
                 // 
-                
-                echo 'Etape Déploiement' 
+                 echo "Etape Deploy "
             }
         }
-    
-} 
+    }
+}
