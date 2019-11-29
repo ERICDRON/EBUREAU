@@ -8,6 +8,7 @@ pipeline {
                 echo 'Etape Compile'
             }
         }
+    }
         stage('Test') { 
             steps {
                 // 
@@ -30,5 +31,5 @@ pipeline {
                 echo 'Etape Déploiement' 
             }
         }
-    }
+    
 } 
