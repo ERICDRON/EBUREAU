@@ -10,6 +10,7 @@ pipeline {
                 // 
                   echo 'Etape Build maven'
                     bat 'mvn clean compile'
+                    
             }
         }
         
